@@ -41,7 +41,7 @@
                     <a class="nav-link" href="#">ENTREGAS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">CONTATO</a>
+                    <a class="nav-link" href="#contato">CONTATO</a>
                   </li>
                   <li class="nav-item menu-login">
                     <a class="nav-link" href="#">LOGIN</a>
@@ -143,7 +143,7 @@
       </div>
       
     </main>
-    <footer>
+    <footer id="contato">
       <div class="container">
         <form action="" method="post" accept-charset="utf-8">
         <div class="row contato">
@@ -189,7 +189,38 @@
             <div class="modal-body">
               <article class="produto">
                 <figure>
-                  <img src="/assets/img/produtos/produto1.png" alt="">
+                 <!-- carrosel -->
+                  <div id="indicadoresModal" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#indicadoresModal" data-slide-to="0" class="active"></li>
+                      <li data-target="#indicadoresModal" data-slide-to="1"></li>
+                      <li data-target="#indicadoresModal" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="/assets/img/produtos/produto1.png" alt="Primeiro Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/img/produtos/produto1.png" alt="Segundo Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/img/produtos/produto1.png" alt="Terceiro Slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#indicadoresModal" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#indicadoresModal" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                  </div>
+                  <!-- /carrosel -->
+
+
+                
+                <!--   <img src="/assets/img/produtos/produto1.png" alt=""> -->
                 </figure>
                 <div class="descricao-produto">
                   <h3>Duplo Bacon</h3>
